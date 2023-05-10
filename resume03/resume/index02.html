@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb</title>
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <a class="navbar-brand" href="#">
+            <img src="./img/Y_square_solid_字母y.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            York
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index01.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index02.html">About&nbsp;Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./index03.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Experience 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./index03.html#dropdown01">学历</a></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown02">技能</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown03">经验</a></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown04">荣誉</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- 导航栏 -->
+      <!-- 内容 -->
+      <!-- flex布局 gap -->
+      <main class="flex-container grid gap-3">
+        <div class="card head-card p-2 g-col-6" style="width: 50rem; border-radius: 10px; background-color: #FFFBE6 ;">
+            <div class="card-body">
+              <p class="card-text">
+                <div>
+                  <div class="item">   
+                      <img src="img/shushu.png" alt="我的头像" class="photo01">
+                      <h4 class="nick">鼠鼠学士</h4>
+                      <p class="status">#沉淀#顶峰相见</p>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+
+        <div class="flex-container-row grid gap-3">
+          <div class="card p-2 g-col-6 text-block" style="width: 18rem; border-radius: 10px; height: 50rem;">
+              <div class="card-body">
+                <h5 class="card-title">个人信息</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-text">
+                  <div>
+                    <div class="item">
+                        <!-- <p style="font-size: 25px;">个人信息</p> -->
+                        <blockquote>
+                            <p>姓名：黄鼠鼠</p>
+                            <p>性别：男</p>
+                            <p>邮箱: <i>1755786490@qq.com</i></p>
+                            <p>联系方式: <i>13328407815</i></p>
+                            <p>IP 属地：福建省</p>
+                            <p>创建York：2023-05-04</p>
+                        </blockquote>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex-container grid gap-3">
+                <div class="card p-2 g-col-6 text-block" style="width: 32rem; border-radius: 10px; height: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">个人介绍</h5>
+                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                      <p class="card-text">
+                        <div>
+                          <div class="item">
+                              <!-- <p style="font-size: 25px;">个人信息</p> -->
+                              <blockquote>
+                                  <div style="text-align: justify;">
+                                      自我学习能力强，做事认真。专业知识扎实，有积极的工作态度，能够独立
+                                      工作，有团队精神。具有良好的文化素质，在未来的工作中我将以充沛的精
+                                      力，努力工作，稳定地进步自己的工作能力。我正在寻找一个更好的发展平
+                                      台，希望能够充分发挥自己的优势，共同努力成就一番事业。
+                                  </div>
+                              </blockquote>
+                          </div>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card p-2 g-col-6 text-block" style="width: 32rem; border-radius: 10px; height: auto;">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <div>
+                          <div class="item">
+                              <img src="./img/blank.PNG" alt="暂时还没有内容" class="blank card-img-top">
+                          </div>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+      </div>
+
+      </main>
+      <!-- 内容 -->
+</ul>
+</body>
+</html>

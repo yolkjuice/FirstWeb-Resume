@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background-color: #696969;
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.flex-container-row {
+    width: 50rem;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row; 
+}
+
+.item {
+    align-self: auto;
+    flex-shrink: 1;
+}
+
+.head-card {
+    margin-top: 30px;
+    border: 2px solid #000;  
+    border-left: 10px solid #292828;
+}
+
+img.photo01 {
+    float: left;
+	margin-right: 20px;
+    border-radius: 50%;
+    width: 100px;
+}
+
+img.blank {
+    position: relative;
+}
+
+.nick {
+    padding-top: 10px;
+}
+
+.status {
+    color: 	#A9A9A9;
+}
+
+.text-block {
+    border: 2px solid #000;
+    background-color: #f1f1f1;
+}
+
+.sign-word {
+    font-size: 23px;
+    font-family:sans-serif;
+    color: #555555;
+    padding: 18px 20px;
+}
