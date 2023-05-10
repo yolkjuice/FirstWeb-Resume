@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑资料</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./style/script.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div df{
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/Y_square_solid_字母y.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            York
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index01.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index02.html">About&nbsp;Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Experience 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./index03.html#dropdown01">学历</a></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown02">技能</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown03">经验</a></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown04">荣誉</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- 导航栏 -->
+      <!-- 内容 表单 -->
+      <div class="df" style="background-color: #f2f2f2; display: flex; width: 30rem; height: 40rem; padding: 20px 20px;">
+        <form action="./index01.html">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name">
+        
+            <label for="sex">性别</label>
+            <select id="sex" name="sex">
+              <option value="men">男</option>
+              <option value="women">女</option>
+            </select>
+            
+            <label for="mail">邮箱</label>
+            <input type="text" id="mail" name="mail">
+
+            <label for="phone">联系方式</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="ip">IP地址</label>
+            <input type="text" id="ip" name="ip">
+
+            <input type="submit" value="Submit" name="submit">
+          </form>
+      </div>
+</body>
+</html>

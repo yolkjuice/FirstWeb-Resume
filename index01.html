@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./style/script.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <style>
+      .mask {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: none;
+      }
+  
+      .contact {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/Y_square_solid_字母y.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            York
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index01.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index02.html">About&nbsp;Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Experience 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./index03.html#dropdown01">学历</a></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown02">技能</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown03">经验</a></li>
+                  <li><a class="dropdown-item" href="./index03.html#dropdown04">荣誉</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- 导航栏 -->
+      <!-- 内容 -->
+      <!-- flex布局 gap -->
+      <main class="flex-container grid gap-3">
+        <!-- 用户栏 -->
+        <div class="card head-card p-2 g-col-6" style="width: 50rem; border-radius: 10px; background-color: #FFFBE6 ;">
+          <div class="card-body">
+            <p class="card-text">
+              <div>
+                <img src="img/shushu.png" alt="我的头像" class="photo01">
+                <h4 class="nick" style="float: left;">鼠鼠学士</h4>
+                <div style="display:flex; justify-content: end; align-items: center;">
+                  <!-- 链接 -->
+                  <a href="https://github.com/yolkjuice/">
+                    <img src="./img/GitHub-Logo.png" alt="github" class="github">
+                  </a>
+                  <!-- 链接 -->
+                  <button type="button" class="btn btn-outline-secondary btn-sm" style="border-radius: 10px;">编辑资料</button>
+                </div>
+                <p class="status"">#沉淀#顶峰相见</p>
+              </div>
+            </p>
+          </div>
+        </div>
+        <!-- 用户栏 -->
+
+        <div class="flex-container-row grid gap-3">
+          <!-- 信息栏 -->
+          <div class="card p-2 g-col-6 text-block" style="width: 18rem; border-radius: 10px; height: 50rem;">
+              <div class="card-body">
+                <h5 class="card-title">个人信息</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-text">
+                  <div>
+                    <div>
+                        <!-- <p style="font-size: 25px;">个人信息</p> -->
+                        <blockquote>
+                            <p>姓名：黄鼠鼠</p>
+                            <p>性别：男</p>
+                            <p>邮箱: <i>1755786490@qq.com</i></p>
+                            <p>联系方式: <i>13328407815</i></p>
+                            <p>IP 属地：福建省</p>
+                            <p id="wdate">创建York：<script>document.write(getDate())</script></p>
+                        </blockquote>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <!-- 信息栏 -->
+
+            <div class="flex-container grid gap-3">
+              <!-- 签名栏 -->
+              <div class="card p-2 g-col-6 text-block" style="width: 32rem; border-radius: 10px; height: auto;">
+                <div class="card-body">
+                  <h5 class="card-title">签名</h5>
+                  <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                  <p class="card-text">
+                    <div>
+                      <div>
+                          <!-- <p style="font-size: 25px;">个人信息</p> -->
+                          <blockquote class="sign-word">
+                            你有没有注意到，昂扬的斗志，是何等不可抗拒而不可战胜吗？
+                            任何心灵又有了它，就可以无所畏惧，所向无敌。--理想国
+                          </blockquote>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <!-- 签名栏 -->
+
+              <div class="card p-2 g-col-6 text-block" style="width: 32rem; border-radius: 10px; height: auto;">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div>
+                      <div>
+                          <img src="./img/blank.PNG" class=" blank card-img-top" alt="暂时还没有内容">
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      
+      </main>
+      <!-- 内容 -->
+</ul>
+</body>
+</html>
